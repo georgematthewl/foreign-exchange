@@ -6,17 +6,17 @@ import {
   FAIL_GET_CURRENCIES,
 } from "./constants";
 
-export function startGetCurrencies() {
+export const startGetCurrencies = () => {
   return { type: START_GET_CURRENCIES };
-}
+};
 
-export function successGetCurrencies(data) {
+export const successGetCurrencies = (data) => {
   return { type: SUCCESS_GET_CURRENCIES, payload: data };
-}
+};
 
-export function failGetCurrencies(error) {
+export const failGetCurrencies = (error) => {
   return { type: FAIL_GET_CURRENCIES, payload: error };
-}
+};
 
 export const getAllCurrencies = () => {
   return (dispatch) => {
