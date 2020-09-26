@@ -25,6 +25,10 @@ export const CardContainer = styled.div`
     .currency-value {
       display: flex;
       justify-content: space-between;
+
+      p {
+        word-break: break-word;
+      }
     }
 
     .currency-name {
