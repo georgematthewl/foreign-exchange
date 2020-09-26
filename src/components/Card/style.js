@@ -44,7 +44,9 @@ export const CardContainer = styled.div`
     background: ${(props) => props.theme.colors.primary};
     color: white;
     width: 10%;
-    border: none;
+    border: 1px solid ${(props) => props.theme.colors.primary};
+    border-top-right-radius: ${({ theme }) => theme.border.cardRadius};
+    border-bottom-right-radius: ${({ theme }) => theme.border.cardRadius};
     cursor: pointer;
     transition: 0.3s;
 
