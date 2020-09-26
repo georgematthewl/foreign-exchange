@@ -12,5 +12,7 @@ export const DropdownContainer = styled.div`
   select {
     width: 100%;
     margin-right: 0.25rem;
+    background: white;
+    border: 1px solid ${({ theme }) => theme.colors.primary};
   }
 `;

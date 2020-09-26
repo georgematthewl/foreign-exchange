@@ -10,6 +10,7 @@ export const HomePageContainer = styled.div`
     margin-bottom: 1rem;
 
     input {
+      width: 30%;
       border-radius: 0;
       border: none;
       padding: 0.5rem;
