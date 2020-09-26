@@ -1,0 +1,3 @@
+export const START_GET_CURRENCIES = "src/HomePage/START_GET_CURRENCIES";
+export const SUCCESS_GET_CURRENCIES = "src/HomePage/SUCCESS_GET_CURRENCIES";
+export const FAIL_GET_CURRENCIES = "src/HomePage/FAIL_GET_CURRENCIES";
