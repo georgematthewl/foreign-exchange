@@ -1,6 +1,9 @@
-# react-starter
+# Foreign Exchange Currency Simple App
 
-A starter kit simple react application with stack:
+This is a simple foreign exchange currency calculator. Created for OVO online technical test.<br>
+This app only contains a few currencies: CAD, IDR, GBP, CHF, SGD, INR, MYR, JPY, KRW, and EUR.
+
+Tech stack:
 
 1. Redux
 2. Thunk
@@ -8,14 +11,6 @@ A starter kit simple react application with stack:
 4. Eslint
 5. Prettier
 6. Husky pre-commit
-
-# How to use this react starter pack
-
-Just clone this repo, and change your remote origin to your new repo, and voila! You're ready to use it.
-
-------
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -54,32 +49,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run docker`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To build the docker image.<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm run foreign-exchange`
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To run the React App via the docker image.<br>
