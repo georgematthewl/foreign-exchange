@@ -56,3 +56,7 @@ To build the docker image.<br>
 ### `npm run foreign-exchange`
 
 To run the React App via the docker image.<br>
+
+### `npm run generate`
+
+To generate either components or containers.<br>
