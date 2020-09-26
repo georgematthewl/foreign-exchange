@@ -25,10 +25,10 @@ class Dropdown extends React.Component {
     return (
       <DropdownContainer className={`${show ? "" : "hidden"}`}>
         <select className="selector" onChange={this.handleChange}>
-          {LIST_CURRENCIES.map((el) => {
+          {LIST_CURRENCIES.map((currency) => {
             return (
-              <option key={el} value={el}>
-                {el}
+              <option key={currency} value={currency}>
+                {currency}
               </option>
             );
           })}
