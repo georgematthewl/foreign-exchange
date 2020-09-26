@@ -29,7 +29,7 @@ class HomePage extends React.Component {
   updateInputValue = (ev) => {
     const { value } = ev.target;
 
-    if (value <= 0 || value === "") this.setState({ currentValue: 10 });
+    if (value <= 0 && value !== "") this.setState({ currentValue: 10 });
     else this.setState({ currentValue: value });
   };
 
