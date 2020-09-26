@@ -25,7 +25,7 @@ class Dropdown extends React.Component {
 
     return (
       <DropdownContainer className={`${show ? "" : "hidden"}`}>
-        <select onChange={this.handleChange}>
+        <select className="selector" onChange={this.handleChange}>
           {LIST_CURRENCIES.map((el) => {
             return (
               <option key={el} value={el}>
@@ -35,6 +35,7 @@ class Dropdown extends React.Component {
           })}
         </select>
         <Button
+          buttonClasses="submit"
           name="Submit"
           type="primary"
           show={show}

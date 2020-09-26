@@ -11,6 +11,7 @@ Tech stack:
 4. Eslint
 5. Prettier
 6. Husky pre-commit
+7. Jest
 
 ## Available Scripts
 

@@ -80,7 +80,7 @@ class HomePage extends React.Component {
         <section className="header">
           <div className="left">
             <p>USD - United States Dollar</p>
-            <h2>USD</h2>
+            <h2 className="main-currency">USD</h2>
           </div>
           <input
             type="number"
@@ -116,7 +116,7 @@ class HomePage extends React.Component {
             show={isAddButtonShowed}
             type="primary"
             name="+ Add More Currency"
-            buttonClasses="w-full"
+            buttonClasses="w-full add"
             func={this.toggleAddButton}
           />
         </section>

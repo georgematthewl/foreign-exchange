@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "generate": "plop --plopfile internals/generators/index.js",
     "docker": "docker build -t foreign-exchange .",
@@ -57,8 +57,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.2",
     "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "jest-cli": "^26.4.2",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2",
-    "pretty-quick": "^3.0.2"
+    "pretty-quick": "^3.0.2",
+    "puppeteer": "^5.3.1"
   }
 }
