@@ -49,5 +49,6 @@ export const HomePageContainer = styled.div`
     padding: 0 1rem;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 1rem;
   }
 `;
