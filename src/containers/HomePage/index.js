@@ -26,8 +26,8 @@ class HomePage extends React.Component {
     getCurrencies();
   };
 
-  updateInputValue = (ev) => {
-    const { value } = ev.target;
+  updateInputValue = (event) => {
+    const { value } = event.target;
 
     if (value <= 0 && value !== "") this.setState({ currentValue: 10 });
     else this.setState({ currentValue: value });
@@ -40,10 +40,10 @@ class HomePage extends React.Component {
     return newArray;
   };
 
-  handleDeleteCard = (el) => {
+  handleDeleteCard = (card) => {
     const updatedArr = this.copyArray();
 
-    updatedArr.splice(updatedArr.indexOf(el), 1);
+    updatedArr.splice(updatedArr.indexOf(card), 1);
     this.setState({ selectedCurrencies: updatedArr });
   };
 
@@ -53,12 +53,12 @@ class HomePage extends React.Component {
     this.setState({ isAddButtonShowed: !isAddButtonShowed });
   };
 
-  handleOptionChange = (el) => {
+  handleOptionChange = (currency) => {
     const { isAddButtonShowed } = this.state;
     const updatedArr = this.copyArray();
 
-    if (updatedArr.indexOf(el) === -1) {
-      updatedArr.push(el);
+    if (updatedArr.indexOf(currency) === -1) {
+      updatedArr.push(currency);
       this.setState({
         selectedCurrencies: updatedArr,
         isAddButtonShowed: !isAddButtonShowed,
