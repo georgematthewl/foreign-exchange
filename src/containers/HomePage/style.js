@@ -44,6 +44,11 @@ export const HomePageContainer = styled.div`
       text-align: center;
       margin-bottom: 1rem;
     }
+
+    h3 {
+      color: ${(props) => props.theme.colors.primary};
+      text-align: center;
+    }
   }
 
   .add-btn {

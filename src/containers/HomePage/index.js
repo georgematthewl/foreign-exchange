@@ -33,11 +33,17 @@ class HomePage extends React.Component {
     else this.setState({ currentValue: value });
   };
 
-  handleDeleteCard = (el) => {
+  copyArray = () => {
     const { selectedCurrencies } = this.state;
-    const updatedArr = [...selectedCurrencies];
+    const newArray = [...selectedCurrencies];
 
-    updatedArr.splice(selectedCurrencies.indexOf(el), 1);
+    return newArray;
+  };
+
+  handleDeleteCard = (el) => {
+    const updatedArr = this.copyArray();
+
+    updatedArr.splice(updatedArr.indexOf(el), 1);
     this.setState({ selectedCurrencies: updatedArr });
   };
 
@@ -48,8 +54,8 @@ class HomePage extends React.Component {
   };
 
   optionChangeHandler = (el) => {
-    const { selectedCurrencies, isAddButtonShowed } = this.state;
-    const updatedArr = [...selectedCurrencies];
+    const { isAddButtonShowed } = this.state;
+    const updatedArr = this.copyArray();
 
     if (updatedArr.indexOf(el) === -1) {
       updatedArr.push(el);
@@ -115,7 +121,7 @@ class HomePage extends React.Component {
           <Button
             show={isAddButtonShowed}
             type="primary"
-            name="+ Add More Currency"
+            name="+ Add More Currencies"
             buttonClasses="w-full add"
             func={this.toggleAddButton}
           />
