@@ -106,7 +106,6 @@ describe("Add Duplicate Currency Card", () => {
     await page.click(".add");
     await page.waitForSelector(".selector");
     await page.click(".submit");
-    await page.click("button[type=button]");
 
     await page.click(".add");
     await page.waitForSelector(".selector");
