@@ -83,3 +83,38 @@ describe("Add Currency Card", () => {
     browser.close();
   }, 9000000);
 });
+
+describe("Add Duplicate Currency Card", () => {
+  test("Cannot add duplicate currency card", async () => {
+    const browser = await puppeteer.launch({
+      headless: false,
+      devtools: true,
+      slowMo: 250,
+    });
+    const page = await browser.newPage();
+
+    page.emulate({
+      viewport: {
+        width: 500,
+        height: 900,
+      },
+      userAgent: "",
+    });
+
+    await page.goto("http://localhost:3000/");
+    await page.waitForSelector(".add");
+    await page.click(".add");
+    await page.waitForSelector(".selector");
+    await page.click(".submit");
+    await page.click("button[type=button]");
+
+    await page.click(".add");
+    await page.waitForSelector(".selector");
+    await page.click(".submit");
+
+    const html = await page.$eval(".list-card span", (e) => e.innerHTML);
+    expect(html).toBe("Currency already exists, please try another one.");
+
+    browser.close();
+  }, 9000000);
+});

@@ -8,7 +8,6 @@ import { DropdownContainer } from "./style";
 class Dropdown extends React.Component {
   constructor() {
     super();
-
     this.state = {
       selectedCurrencies: "CAD",
     };
