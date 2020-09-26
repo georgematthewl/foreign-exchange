@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { LoadingContainer } from "./style";
 
 class Loading extends React.Component {
@@ -23,5 +24,8 @@ class Loading extends React.Component {
     );
   }
 }
+Loading.propTypes = {
+  text: PropTypes.string,
+};
 
 export default Loading;

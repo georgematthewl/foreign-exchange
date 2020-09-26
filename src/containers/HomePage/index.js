@@ -53,7 +53,7 @@ class HomePage extends React.Component {
     this.setState({ isAddButtonShowed: !isAddButtonShowed });
   };
 
-  optionChangeHandler = (el) => {
+  handleOptionChange = (el) => {
     const { isAddButtonShowed } = this.state;
     const updatedArr = this.copyArray();
 
@@ -115,7 +115,7 @@ class HomePage extends React.Component {
         </section>
         <section className="add-btn">
           <Dropdown
-            onChange={this.optionChangeHandler}
+            onChange={this.handleOptionChange}
             show={!isAddButtonShowed}
           />
           <Button
