@@ -10,6 +10,7 @@ export const DropdownContainer = styled.div`
   }
 
   select {
+    cursor: pointer;
     width: 100%;
     margin-right: 0.25rem;
     background: white;
