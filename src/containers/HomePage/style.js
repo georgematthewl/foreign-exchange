@@ -41,6 +41,7 @@ export const HomePageContainer = styled.div`
     span {
       color: red;
       text-align: center;
+      margin-bottom: 1rem;
     }
   }
 
