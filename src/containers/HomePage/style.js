@@ -39,6 +39,7 @@ export const HomePageContainer = styled.div`
     padding: 1rem;
 
     span {
+      display: inline-block;
       color: red;
       text-align: center;
       margin-bottom: 1rem;
