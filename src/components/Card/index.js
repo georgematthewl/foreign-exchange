@@ -9,7 +9,7 @@ class Card extends React.Component {
     const { currency, rate, currentValue, deleteCard } = this.props;
     return (
       <CardContainer>
-        <div className="left-box">
+        <div className="left-container">
           <div className="currency-value">
             <h3>{currency}</h3>
             <p>{(currentValue * rate).toLocaleString("id")}</p>
@@ -17,7 +17,7 @@ class Card extends React.Component {
           <p className="currency-name">
             {currency} - {CURRENCIES[currency]}
           </p>
-          <p className="usd-rate">
+          <p className="base-rate">
             1 USD = {currency} {rate.toLocaleString("id")}
           </p>
         </div>

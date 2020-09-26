@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04),
     0px 10px 20px rgba(0, 0, 0, 0.04);
 
-  .left-box {
+  .left-container {
     width: 90%;
     padding: 0.5rem 0.75rem;
 
@@ -38,7 +38,7 @@ export const CardContainer = styled.div`
       font-style: italic;
     }
 
-    .usd-rate {
+    .base-rate {
       margin-top: 0.25rem;
       font-size: 13px;
     }
